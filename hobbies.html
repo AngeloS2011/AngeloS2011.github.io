@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Hobbies</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --accent: #0dfaab;
+            --primary-dark: #1b2a4a;
+        }
+
+        body {
+            background-color: #f0f4ff;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        h1, h2 {
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+
+        .section-box {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--accent) !important;
+        }
+
+        .hobby-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1b2a4a;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Angelo Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="active.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+                <li class="nav-item"><a class="nav-link active" href="hobbies.html">Hobbies</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipes</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="recipe_v1.html">HTML</a></li>
+                        <li><a class="dropdown-item" href="recipe_v2.html">CSS</a></li>
+                        <li><a class="dropdown-item" href="recipe_v3.html">Bootstrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<div class="container text-center mt-5">
+    <h1 class="mb-3">My Hobbies</h1>
+    <p class="lead">Things I enjoy doing in my free time</p>
+    <p class="text-muted">My hobbies help me stay active, relaxed, and balanced. I like a mix of sports, fitness, and entertainment.</p>
+</div>
+
+<!-- HOBBIES SECTION -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">What I Like To Do</h2>
+
+    <div class="row g-4">
+
+        <!-- WEIGHTLIFTING -->
+        <div class="col-md-4">
+            <div class="section-box text-center h-100">
+                <div class="hobby-icon">🏋️‍♂️</div>
+                <h4>Weightlifting</h4>
+                <p>I enjoy weightlifting because it helps me build strength, discipline, and confidence.</p>
+            </div>
+        </div>
+
+        <!-- BIKING -->
+        <div class="col-md-4">
+            <div class="section-box text-center h-100">
+                <div class="hobby-icon">🚴‍♂️</div>
+                <h4>Biking</h4>
+                <p>Biking is a fun way for me to stay active and enjoy being outside.</p>
+            </div>
+        </div>
+
+        <!-- MOVIES -->
+        <div class="col-md-4">
+            <div class="section-box text-center h-100">
+                <div class="hobby-icon">🎬</div>
+                <h4>Watching Movies</h4>
+                <p>I like watching movies to relax and enjoy different stories and genres.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
